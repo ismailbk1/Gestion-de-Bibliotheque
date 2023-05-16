@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="735.0" maxWidth="936.0" minHeight="500.0" minWidth="500.0" prefHeight="524.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="257.0" style="-fx-background-color: #373737;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="21.0" layoutY="134.0" mnemonicParsing="false" onAction="#Acueil" prefHeight="39.0" prefWidth="217.0" text="Accueil" />
+            <Pane layoutX="1.0" prefHeight="98.0" prefWidth="257.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="56.0" layoutY="14.0" prefHeight="60.0" prefWidth="120.0" text="Nom Bibliotheque" textFill="WHITE" />
+                  <Separator layoutY="86.0" prefHeight="25.0" prefWidth="257.0" />
+               </children>
+            </Pane>
+            <Button layoutX="20.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#lecteur" prefHeight="39.0" prefWidth="217.0" text="Gestion des lectures" />
+            <Button layoutX="21.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#livres" prefHeight="39.0" prefWidth="217.0" text="Gestion des livres" />
+            <Button layoutX="21.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#empruntes" prefHeight="39.0" prefWidth="217.0" text="Gestion des empruntes" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="parent" layoutX="257.0" layoutY="94.0" prefHeight="423.0" prefWidth="678.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="257.0" AnchorPane.rightAnchor="1.0" />
+      <Pane layoutX="257.0" layoutY="-4.0" prefHeight="104.0" prefWidth="678.0" style="-fx-background-color: black;" AnchorPane.topAnchor="-4.0">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="96.0" layoutX="633.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

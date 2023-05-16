@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="415.0" prefWidth="684.0" styleClass="backgrnd" stylesheets="@../../bin/application/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LecteurController">
+   <children>
+      <Label layoutX="26.0" layoutY="40.0" prefHeight="33.0" prefWidth="100.0" text="Rechcercher">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nom" layoutX="209.0" layoutY="109.0" promptText="Nom" />
+      <TextField fx:id="txt_cin" layoutX="26.0" layoutY="109.0" promptText="Cin" />
+      <TextField fx:id="txt_search" layoutX="145.0" layoutY="44.0" promptText="CIN" />
+      <Label layoutX="199.0" layoutY="166.0" prefHeight="17.0" prefWidth="116.0" text="aucune selectioneé">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_prenom" layoutX="26.0" layoutY="162.0" promptText="Prenom" />
+      <Button fx:id="btn_add" layoutX="186.0" layoutY="377.0" mnemonicParsing="false" onMouseClicked="#addlecteur" prefHeight="25.0" prefWidth="108.0" styleClass="buttons" stylesheets="@../../bin/application/application.css" text="Ajouter" />
+      <Button fx:id="btn_delete" layoutX="304.0" layoutY="377.0" mnemonicParsing="false" onMouseClicked="#supprimerlecteur" prefHeight="25.0" prefWidth="108.0" styleClass="buttons" stylesheets="@../../bin/application/application.css" text="Supprimer" />
+      <TableView fx:id="table" layoutX="26.0" layoutY="208.0" onMouseClicked="#selectlecteur" prefHeight="169.0" prefWidth="618.0" stylesheets="@../../bin/application/application.css">
+        <columns>
+          <TableColumn fx:id="lec_id" prefWidth="95.0" text="ID" />
+          <TableColumn fx:id="lec_cin" prefWidth="184.0" text="Numo Cin" />
+            <TableColumn fx:id="lec_nom" prefWidth="198.0" text="Nom " />
+            <TableColumn fx:id="lec_prenom" prefWidth="140.0" text="Prenom" />
+        </columns>
+         <styleClass>
+            <String fx:value="table-cell" />
+            <String fx:value="table-row-cell" />
+            <String fx:value="table-view" />
+         </styleClass>
+      </TableView>
+      <Button layoutX="309.0" layoutY="44.0" mnemonicParsing="false" onMouseClicked="#search" text="Search" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="415.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AcueilController">
+   <children>
+      <Pane layoutX="45.0" layoutY="41.0" prefHeight="55.0" prefWidth="657.0" style="-fx-background-color: #7294AC;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label layoutX="207.0" layoutY="12.0" prefHeight="32.0" prefWidth="174.0" text="Nom de Bibliotheque" textAlignment="RIGHT" textFill="WHITE" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="279.0" fitWidth="209.0" layoutX="31.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="153.0" layoutY="101.0" prefHeight="47.0" prefWidth="226.0" style="-fx-background-color: #487885;" text="Nombres des livres      :" textFill="#f8f8f8" />
+      <Label layoutX="153.0" layoutY="175.0" prefHeight="47.0" prefWidth="226.0" style="-fx-background-color: #487885;" text="Nombres des lecteurs    :" textFill="WHITE" />
+      <Label layoutX="153.0" layoutY="241.0" prefHeight="47.0" prefWidth="226.0" style="-fx-background-color: #487885;" text="Nombres des emprunts   :" textFill="#fffbfb" />
+      <TextField fx:id="nblivres" layoutX="388.0" layoutY="105.0" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c2c8c5;">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor></TextField>
+      <TextField fx:id="nbemprunt" layoutX="398.0" layoutY="245.0" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c2c8c5;" />
+      <TextField fx:id="nblecteurs" layoutX="398.0" layoutY="179.0" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c2c8c5;" />
+   </children>
+</AnchorPane>
